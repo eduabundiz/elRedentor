@@ -98,6 +98,85 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   html{
+    box-sizing: border-box;
+  }
+  *,*:before,*:after{
+    box-sizing: inherit;
+  }
+  body{
+    background-color: #f2f2f2;    
+    font-family: 'Open Sans', sans-serif;
+  }
+
+   /***Globales***/
+
+
+   /**Site-Header**/
+   .principal-header{
+    background-image: url(../img/templo.jpeg);
+    position: relative;
+    height: 100vh;
+    background-position-y: -320px;
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+
+   }
+   .barra{
+     position: absolute top ;
+     background-color: rgb(219,219,219,.75);
+     width: auto;     
+     margin-top: 10px;     
+     border-radius: 10px;     
+     
+   }
+   @media(min-width: 720px){
+    .barra{
+      position: absolute center;
+      background-color: rgb(219,219,219,.75);
+      width: auto;
+      margin-top: 60px;
+      display: inline-block;
+      border-radius: 10px;     
+      
+    }
+   }
+
+   .navegation ul{
+    list-style-type: none;
+    text-align: center;
+   }
+
+   .navegation ul li{
+    display: inline;
+    text-align: center;
+    margin: 0 10px 0 0;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #1b76bb;
+    font-weight: 600;
+ }
+ .navegation ul{
+   display: flex;
+   justify-content: space-between;
+   display: none;
+ }
+ @media(min-width: 720px){
+   .navegation ul{
+     display: inline;
+   }
+ }
+ .navegation img{
+   height: 70px;
+ }
+
+
+    /**main-content**/
+
+   /**footer**/
+
+   /*Fin del código*/
 /* ==========================================================================
    Helper classes
    ========================================================================== */
