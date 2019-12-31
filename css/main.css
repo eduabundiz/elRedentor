@@ -105,11 +105,35 @@ textarea {
     box-sizing: inherit;
   }
   body{
-    background-color: #f2f2f2;    
+    background-color: #1b76bb;
     font-family: 'Open Sans', sans-serif;
   }
-
+  
+  h1{
+    color: #1b76bb;
+    padding: 10px auto;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    text-transform: uppercase;
+  }
+  h2{
+    font-size: 2em;
+    color: white;
+    border-bottom: 2px solid white;
+    text-align: center;
+  }
+  h4{
+    font-size: 1.6em;
+    text-align: center;
+    color: white;
+    
+  }
    /***Globales***/
+  .container{    
+    width: 90%;
+    margin: auto;    
+  }
+
 
 
    /**Site-Header**/
@@ -117,38 +141,57 @@ textarea {
     background-image: url(../img/templo.jpeg);
     position: relative;
     height: 100vh;
+    max-height: 300px ;
     background-position-y: -320px;
-    background-size: cover;
     text-align: center;
     background-repeat: no-repeat;
 
    }
+   @media(min-width:480px ){
+    .principal-header{
+      height: 80vh;
+      background-size: cover;
+      max-height: 300px;
+    }
+     h1{
+       font-size: 2.2em;
+     }
+   }
+   @media(min-width: 720px){
+      .principal-header{
+        height: 100vh;
+        max-height: 100vh;
+    }
+
+   }
    .barra{
      position: absolute top ;
-     background-color: rgb(219,219,219,.75);
+     background-color: rgb(255,255,255,.85);
      width: auto;     
      margin-top: 10px;     
      border-radius: 10px;     
      
    }
+   .principal-header .barra img{
+    height: 70px;
+   }
    @media(min-width: 720px){
     .barra{
-      position: absolute center;
-      background-color: rgb(219,219,219,.75);
-      width: auto;
+      position: absolute center;      
       margin-top: 60px;
       display: inline-block;
-      border-radius: 10px;     
+      border-radius: 10px;   
+      border: 1px solid #1b76bb;  
       
     }
    }
 
-   .navegation ul{
+   .navegation {
     list-style-type: none;
     text-align: center;
    }
 
-   .navegation ul li{
+   .navegation  a{
     display: inline;
     text-align: center;
     margin: 0 10px 0 0;
@@ -156,25 +199,83 @@ textarea {
     text-transform: uppercase;
     color: #1b76bb;
     font-weight: 600;
+    text-decoration: none;
  }
- .navegation ul{
+ .navegation {
    display: flex;
    justify-content: space-between;
    display: none;
  }
  @media(min-width: 720px){
-   .navegation ul{
+   .navegation {
      display: inline;
    }
  }
- .navegation img{
-   height: 70px;
+ /*Título*/
+ .titulo{
+   position: absolute center;
+   padding: 0 20px;
+   
  }
+.titulo p{
+  color: #1b76bb;
+  padding: 10;
+  margin: 0;
+}
+.titulo p bold{
+  font-weight: 700;
+}
+@media(min-width: 720px){
+  .titulo {
+    width: 70%;
+    height: 45%;
+    align-content: center;
+  }
+  .titulo h1 {
+    font-size: 7.3vh;
+    text-transform: uppercase;
+  }
+}
+          /**main-content**/
+/*Servicios*/
 
+.servicio img{
+  max-width: 100%;
+}
+.servicio p{
+  text-align: center;
+}
 
-    /**main-content**/
+@media(min-width: 720px){
+  .servicios{
+    display: flex;
+    justify-content: space-between;
+  }
+  .servicio {
+    width: 33.3%;
+    margin: 18px ;
+  }
+}
 
-   /**footer**/
+/*Mapa*/
+div.mapa{
+  height: 420px;  
+}
+    
+
+      /**footer**/
+.footer{
+  background-color: #1b7ccc;
+  padding: 10px 0;
+}  
+.footer p{
+  text-align: center;
+  color: white;
+  margin-bottom: 0;
+}
+.nav-footer {
+  justify-content: center;
+}
 
    /*Fin del código*/
 /* ==========================================================================
