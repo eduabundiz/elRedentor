@@ -1,11 +1,11 @@
 (function () {
     "use strict";
-    var regalo = document.getElementById('regalo');
+  
     document.addEventListener('DOMContentLoaded', function () {
   
       //mapa
       
-      var map = L.map('mapa').setView([20.535103, -103.474655], 16);
+    /*  var map = L.map('mapa').setView([20.535103, -103.474655], 16);
   
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -16,8 +16,8 @@
         .openPopup()
         .bindTooltip('Entrada López Mateos') 
         .openTooltip();
-  
-  
+      */
+      
   
   
     }); //DOM CONTENT LOADED
